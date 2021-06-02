@@ -22,11 +22,11 @@ Portfolio Project
 
 ## ScreenShot
 
-[Screenshot](./assets/images/portfolio-screenshot.png "Screenshot")
+[Screenshot](./assets/images/portfolio-img.png "Screenshot")
 
 ## Link to Deployed Website
 
-https://acromarti01.github.io/code-refactor-repo/
+https://acromarti01.github.io/portfolio-repo/
 
 
 
