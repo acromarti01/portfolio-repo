@@ -5,16 +5,219 @@
 :root
 {
     --var: 30px;    /*Add variables if needed */
+    --deep-aqua: #003B46;
+    --ocean: #07575B;
+    --wave: #66A5AD;
+    --sea-foam: #C4DFE6
 }
-/* body
-{
 
-}
+/***************HEADER**********************/
 header
 {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--deep-aqua);    
+    font-size: 100%;
+    font-weight: bold;  
+    padding: 20px;
+}
+.myName
+{
+    background-color: white;
+}
+.myName h1
+{
+    color:black;
+    text-transform: capitalize;
+    font-size: 300%;
+}
+header nav
+{
+    display: flex;
+}
+header nav ul
+{
+    display: flex;
+    align-items: center;
+}
+header nav ul li
+{
+    display: inline-block;
+    margin-right: 20px;
+}
+header nav ul li a
+{
+    color:white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+/**********MY IMAGE ****************/
+.my-image
+{
+    display: flex;
+    height: 500px;
+    width: 100%;
+    background: url("../images/person-climbing-stairs.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: relative;
+    justify-content: center;
+}
+.suit
+{
+    height: 250px;
+    width: 250px;
+    border-radius: 500px;    
+    opacity: 1;
 
 }
-main
+.statement
+{
+    font-size: 300%;
+    font-weight: bold;
+    position: absolute;
+    top: 290px;
+    left: 125px;
+    text-transform: capitalize;
+}
+/******************LAYOUT***************************/
+section
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    width: 95vw;
+}
+.container1
+{
+    border-right: 5px solid var(--deep-aqua);
+    display: flex;
+    flex: 1 1 30%;
+    justify-content: flex-end; 
+}
+.container2
+{
+    /* border: 1px solid green; */
+    flex: 1 1 70%;
+    padding: 10px;
+}
+/***************ABOUT ME SECTION************/
+.bio
+{
+    line-height: 1.5;
+    padding: 1rem;
+}
+
+/***************CONTACT ME SECTION**********/
+.container2 ul li
+{
+    display: inline-block;
+    margin-right: 50px;
+}
+.phone-number
+{
+    color:blue;
+    text-decoration: underline;
+}
+.other-links
+{
+    text-transform: capitalize;
+}
+.flex-wrap
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/**************SUB HEADERS*********/
+h2
+{
+    color:var(--deep-aqua);
+    font-size: 300%;
+    font-weight: bold;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;    
+}
+span
+{
+    display: block;
+}
+/***************WORK SECTION**************/
+.work-container
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.project-imgs
+{    
+    opacity: .7;    
+}
+.project-imgs:hover
+{
+    opacity: 1;
+}
+
+
+/*****************GRID SECTION*********************/
+
+.grid-container
+{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 1rem;
+
+}
+.grid-container > div
+{
+    background-color: grey;
+}
+img
+{
+    max-width: 100%;
+}
+.box1
+{
+    grid-column: 1/4;
+}
+.box2
+{
+    grid-column: 1/2;
+}
+.box3
+{
+    grid-column:2/4;
+}
+.box4
+{
+    grid-column:1/2;
+}
+.box5
+{
+    grid-column:2/4;
+}
+
+ @media screen and (max-width: 768px) {
+     header
+     {
+         background-color: lightblue;
+     }
+    .container2 ul 
+    {
+        justify-content: center;
+    }
+  
+  } 
+  
+
+
+
+
+
+/* main
 {
 
 } */
