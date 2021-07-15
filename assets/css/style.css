@@ -21,13 +21,9 @@ header
     font-weight: bold;  
     padding: 20px;
 }
-.myName
+header div h1
 {
-    background-color: white;
-}
-.myName h1
-{
-    color:black;
+    color:white;
     text-transform: capitalize;
     font-size: 300%;
 }
@@ -62,6 +58,7 @@ header nav ul li a
     background-size: auto;
     position: relative;
     justify-content: center;
+    background-color: white;
 }
 .suit
 {
@@ -87,10 +84,11 @@ section
     flex-wrap: wrap;
     margin-top: 50px;
     width: 95vw;
+    background-color: var(--deep-aqua);
 }
 .container1
 {
-    border-right: 5px solid var(--deep-aqua);
+    border-right: 5px solid white;
     display: flex;
     flex: 1 1 30%;
     justify-content: flex-end; 
@@ -106,6 +104,7 @@ section
 {
     line-height: 1.5;
     padding: 1rem;
+    color: white;
 }
 
 /***************CONTACT ME SECTION**********/
@@ -114,14 +113,15 @@ section
     display: inline-block;
     margin-right: 50px;
 }
-.phone-number
+.white-underline 
 {
-    color:blue;
+    color: white;
     text-decoration: underline;
 }
 .other-links
 {
     text-transform: capitalize;
+    color: white;
 }
 .flex-wrap
 {
@@ -134,13 +134,14 @@ section
 /**************SUB HEADERS*********/
 h2
 {
-    color:var(--deep-aqua);
+    color:white;
     font-size: 300%;
     font-weight: bold;
     text-transform: capitalize;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;    
+    align-items: flex-end; 
+    margin-right: 10px;   
 }
 span
 {
@@ -213,11 +214,15 @@ img
   } 
   
 
-
-
-
-
-/* main
+main
 {
+    background-color: var(--deep-aqua);
+}
 
-} */
+
+
+.image-container
+{
+    display: flex;
+    justify-content: center;
+}
