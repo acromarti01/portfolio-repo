@@ -159,7 +159,10 @@ h3
     text-transform: capitalize;
     margin-bottom: 10px;
 }
-.project-tools { color: var(--deep-aqua); }
+.project-tools { 
+    color: var(--deep-aqua);
+    margin-bottom: 10px; 
+}
 
 /***************CONTACT ME SECTION**********/
 .container2 ul li
