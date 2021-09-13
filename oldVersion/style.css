@@ -1,0 +1,221 @@
+* { box-sizing: border-box; 
+}
+:root
+{
+    --var: 30px;    /*Add variables if needed */
+    --deep-aqua: #003B46;
+    --ocean: #07575B;
+    --wave: #66A5AD;
+    --sea-foam: #C4DFE6
+}
+
+/***************HEADER**********************/
+header
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--deep-aqua);    
+    font-size: 100%;
+    font-weight: bold;  
+    padding: 20px;
+}
+header div h1
+{
+    color:white;
+    text-transform: capitalize;
+    font-size: 300%;
+}
+header nav
+{
+    display: flex;
+}
+header nav ul
+{
+    display: flex;
+    align-items: center;
+}
+header nav ul li
+{
+    display: inline-block;
+    margin-right: 20px;
+}
+header nav ul li a
+{
+    color:white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+/**********MY IMAGE ****************/
+main { background-color: var(--deep-aqua); }
+
+.image-container
+{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+.my-image
+{
+    display: flex;
+    height: 500px;
+    width: 100vw;
+    background: url("../images/person-climbing-stairs.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: relative;
+    justify-content: center;
+}
+.suit
+{
+    height: 250px;
+    width: 250px;
+    border-radius: 500px;    
+    opacity: 1;
+
+}
+.statement
+{
+    font-size: 300%;
+    font-weight: bold;
+    position: absolute;
+    top: 290px;
+    left: 125px;
+    text-transform: capitalize;
+}
+/******************LAYOUT***************************/
+section
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    width: 95vw;
+    background-color: var(--deep-aqua);
+}
+.container1
+{
+    border-right: 5px solid white;
+    display: flex;
+    flex: 1 1 30%;
+    justify-content: flex-end; 
+}
+.container2
+{
+    flex: 1 1 70%;
+    padding: 10px;
+}
+/***************ABOUT ME SECTION************/
+.bio
+{
+    line-height: 1.5;
+    padding: 1rem;
+    color: white;
+}
+
+/***************WORK SECTION**************/
+.work-container
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.project-imgs { opacity: .7; }
+.project-imgs:hover { opacity: 1; }
+
+/*****************GRID SECTION*********************/
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 1rem;
+}
+.box { 
+    position: relative;
+    /* background-color: grey;  */
+}
+.box1 { grid-column: 1/4; }
+
+.box2, .box4 { grid-column: 1/2; }
+
+.box3, .box5 { grid-column: 2/4; }
+
+img { max-width: 100%; }
+
+.box-title {
+    z-index: 1;
+    height: 70px;
+    width: 200px;
+    position: absolute;
+    bottom: 50px;
+    background-color: var(--wave);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h3
+{
+    color: var(--deep-aqua);
+    font-size: 120%;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.project-tools { 
+    color: var(--deep-aqua);
+    margin-bottom: 10px; 
+}
+
+/***************CONTACT ME SECTION**********/
+.container2 ul li
+{
+    display: inline-block;
+    margin-right: 50px;
+}
+.white-underline 
+{
+    color: white;
+    text-decoration: underline;
+}
+.other-links
+{
+    text-transform: capitalize;
+    color: white;
+}
+.flex-wrap
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/**************SUB HEADERS*********/
+h2
+{
+    color:white;
+    font-size: 300%;
+    font-weight: bold;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    margin-right: 10px;   
+}
+span { display: block; }
+
+
+
+/************************WEB RESPOSIVE*****************************/
+
+/* Tablets - header changes color */
+@media screen and (max-width: 992px) {
+    .container2 ul li { margin-right: 30px; }
+}  
+/* Large smartphones - navbar changes color */
+@media screen and (max-width: 768px) {}
+  
+/* Small smartphones - image placeholders change color */
+@media screen and (max-width: 576px) {
+    .sample-img {
+      background-color: #8ac4ff;
+    }
+  }

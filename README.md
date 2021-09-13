@@ -4,47 +4,57 @@
 
 My web portfolio of my web applications, resume and contact links
 
-## List Of Technologies
+## ScreenShot
+
+![Image](./assets/images/screenshot2.png)
+![Image](./assets/images/screenshot3.png)
+
+## Table of Contents
+
+- [Technologies](#technologies)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+
+## Technologies
 
 <ul>
     <li>HTML5</li>
     <li>CSS</li>
     <li>JavaScript</li>
+    <li>Materalize</li>
 </ul>
 
-## ScreenShot
+## Installation
 
-![Image](./assets/images/screenshot.png)
+There is no install instructions
+
+## Usage
+
+To run the application open index.js in a browser
 
 ## License
 
-MIT License
+Licensed under the <a href="./LICENSE.txt">MIT License</a>
 
-Copyright (c) 2021 GitHub Inc.
+## Contributing
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+This project follows the Fork and Pull Git workflow guidlines
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+## Tests
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+There are no test instructions
+
+## Questions
+
+GitHub Profile: <a href="https://github.com/acromarti01">https://github.com/acromarti01</a>
+
+Any additional question you can reach me at <u>acromarti@gmail.com</u>
 
 ## Link to Deployed Website
 
 https://acromarti01.github.io/portfolio-repo/
-
-
-
-
 

@@ -6,116 +6,93 @@
     --deep-aqua: #003B46;
     --ocean: #07575B;
     --wave: #66A5AD;
-    --sea-foam: #C4DFE6
+    --sea-foam: #C4DFE6;
+    --light-night: #295161;
+    --dark-night: #02070d;
+
+    --test1: #1a2e37;
+    --test2: #0e242c;
 }
 
-/***************HEADER**********************/
-header
+/*********************MY BACKGROUND IMAGE***************************/
+
+.background-container
 {
+    height: 600px;
+    width: 100%;
+    margin-left: 250px;
+    position: relative;
     display: flex;
-    justify-content: space-between;
-    background-color: var(--deep-aqua);    
-    font-size: 100%;
-    font-weight: bold;  
-    padding: 20px;
-}
-header div h1
-{
-    color:white;
-    text-transform: capitalize;
-    font-size: 300%;
-}
-header nav
-{
-    display: flex;
-}
-header nav ul
-{
-    display: flex;
+    justify-content: center;
     align-items: center;
 }
-header nav ul li
+.meteor-shower
 {
-    display: inline-block;
-    margin-right: 20px;
-}
-header nav ul li a
-{
-    color:white;
-    text-decoration: none;
-    text-transform: capitalize;
-}
-/**********MY IMAGE ****************/
-main { background-color: var(--deep-aqua); }
-
-.image-container
-{
-    display: flex;
-    justify-content: center;
-    background-color: white;
-}
-.my-image
-{
-    display: flex;
-    height: 500px;
-    width: 100vw;
-    background: url("../images/person-climbing-stairs.jpg");
-    background-repeat: no-repeat;
-    background-size: auto;
-    position: relative;
-    justify-content: center;
-}
-.suit
-{
-    height: 250px;
-    width: 250px;
-    border-radius: 500px;    
-    opacity: 1;
-
-}
-.statement
-{
-    font-size: 300%;
-    font-weight: bold;
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/meteor-shower.jpg");
+    background-size: cover;
+    background-position: center;
     position: absolute;
-    top: 290px;
-    left: 125px;
-    text-transform: capitalize;
 }
-/******************LAYOUT***************************/
-section
+
+/*************************NAVIGATION****************************/
+
+.sidenav
 {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    width: 95vw;
-    background-color: var(--deep-aqua);
+    transform: translateX(0%);
+    background-color: var(--dark-night); 
 }
-.container1
+.professional-pic
 {
-    border-right: 5px solid white;
-    display: flex;
-    flex: 1 1 30%;
-    justify-content: flex-end; 
+    height: 200px;
+    width: 200px;
 }
-.container2
+
+/*****************************MODALS********************************/
+
+.modal
 {
-    flex: 1 1 70%;
-    padding: 10px;
-}
-/***************ABOUT ME SECTION************/
-.bio
-{
-    line-height: 1.5;
-    padding: 1rem;
+    background-image: url("../images/meteor-shower.jpg");
     color: white;
 }
+
+/****************************CARD***************************************/
+.flex-card
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    background: none;
+}
+.card-title
+{
+    font-weight: bold;
+    font-size: 70px;
+}
+.small-talk-img { width: 30vw; }
+.dashboard-img, .quiz-img, .team-profile-img, .last-moment-savers-img, .employee-tracker-img { width: 45vw; }
+
+.card-action
+{
+    border: 0px;
+}
+.card-content
+{
+    padding-bottom: 0px;
+}
+
+
 
 /***************WORK SECTION**************/
 .work-container
 {
-    display: flex;
-    flex-wrap: wrap;
+    margin-left: 250px;
+    background-image: url("../images/meteor-shower.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 800px;
 }
 .project-imgs { opacity: .7; }
 .project-imgs:hover { opacity: 1; }
@@ -131,91 +108,48 @@ section
     position: relative;
     /* background-color: grey;  */
 }
-.box1 { grid-column: 1/4; }
+.box1 { grid-column: 1/2; }
 
-.box2, .box4 { grid-column: 1/2; }
+.box2, .box4 { grid-column: 1/1; }
 
 .box3, .box5 { grid-column: 2/4; }
 
 img { max-width: 100%; }
 
-.box-title {
-    z-index: 1;
-    height: 70px;
-    width: 200px;
-    position: absolute;
-    bottom: 50px;
-    background-color: var(--wave);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-h3
-{
-    color: var(--deep-aqua);
-    font-size: 120%;
-    font-weight: bold;
-    text-transform: capitalize;
-    margin-bottom: 10px;
-}
-.project-tools { 
-    color: var(--deep-aqua);
-    margin-bottom: 10px; 
-}
 
-/***************CONTACT ME SECTION**********/
-.container2 ul li
+
+
+.tabs-content
 {
-    display: inline-block;
-    margin-right: 50px;
+    height:700px;
 }
-.white-underline 
+.tabs
+{
+    background: none;
+}
+.project-title
 {
     color: white;
-    text-decoration: underline;
+    font-weight: 600;
+    font-size: 40px;
 }
-.other-links
+.list-of-technologies
 {
-    text-transform: capitalize;
-    color: white;
+    color: #e1ad01;
+    font-weight: 500;
+    font-size: 20px;
 }
-.flex-wrap
-{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-/**************SUB HEADERS*********/
-h2
+.repo-link
 {
     color:white;
-    font-size: 300%;
-    font-weight: bold;
-    text-transform: capitalize;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end; 
-    margin-right: 10px;   
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: underline;
 }
-span { display: block; }
 
-
-
-/************************WEB RESPOSIVE*****************************/
-
-/* Tablets - header changes color */
-@media screen and (max-width: 992px) {
-    .container2 ul li { margin-right: 30px; }
-}  
-/* Large smartphones - navbar changes color */
-@media screen and (max-width: 768px) {}
-  
-/* Small smartphones - image placeholders change color */
-@media screen and (max-width: 576px) {
-    .sample-img {
-      background-color: #8ac4ff;
-    }
-  }
+h1
+{
+    color:white;
+    position: absolute;
+    z-index: 10;
+}

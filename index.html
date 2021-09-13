@@ -1,141 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang='en'>
 
-    <title>Portfolio Page</title>
-    <link rel="stylesheet" href="./assets/css/reset.css">
+<head>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
+        integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Portfolio</title>
 </head>
+
 <body>
-    <header>
-        <div>
-            <h1>anthony cromartie</h1>
-        </div>        
-        <nav>
-            <ul>
-                <li><a href="#about-me">about me</a></li>
-                <li><a href="#work">work</a></li>
-                <li><a href="#contact-me">contact me</a></li>
-                <li><a href="./assets/docs/AnthonyCromartie_CV.pdf" target="_blank">resume</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="image-container">
-            <div class="my-image">
-                <img class="suit" src="./assets/images/professional-pic.jpg" alt="my suit" />
-                <p class="statement">the road to success takes one step at a time</p>
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <div class="user-view">
+                <div>
+                    <img class="professional-pic" src="./assets/images/professional-pic.jpg">
+                </div>
+                <a href="#name"><span class="white-text name">Anthony Cromartie</span></a>                
+            </div>
+        </li>
+        <li><a class="modal-trigger pink-text text-lighten-4" data-target="about-modal" href="">
+                <i class="material-icons pink-text text-lighten-4">home</i>About Me</a></li>
+        <li><a class="purple-text text-lighten-4" href="#work">
+                <i class="material-icons purple-text text-lighten-4">laptop</i>Work</a></li>
+        <li><a class="modal-trigger yellow-text text-lighten-4" data-target="contact-modal" href="">
+                <i class="material-icons yellow-text text-lighten-4">local_phone</i>Contact Me</a></li>
+        <li><a class="green-text text-lighten-4" href="./assets/docs/AnthonyCromartie_CV2.pdf" target="_blank">
+                <i class="material-icons green-text text-lighten-4">description</i>Resume</a></li>
+    </ul>
+    <div id="home" class="background-container">
+        <div class="meteor-shower"></div>
+        <h1>REACH FOR THE STARS</h1>
+    </div>
+    <div class="work-container">
+        <div id="work" class="container">
+            <div class="row">
+                <div class="col s12">
+                    <ul class="tabs">
+                        <li class="tab col s3"><a class="active yellow-text text-accent-3" href="#last-moment-savers">LAST MOMENT SAVERS</a></li>
+                        <li class="tab col s3"><a class="yellow-text text-accent-3" href="#small-talk">SMALL TALK</a></li>
+                        <li class="tab col s3"><a class="yellow-text text-accent-3" href="#employee-tracker">EMPLOYEE TRACKER</a></li> 
+                        <li class="tab col s3"><a class="yellow-text text-accent-3" href="#team-profile">TEAM PROFILE</a></li>                        
+                        
+                    </ul>
+                </div>
+            </div>
+            <div id="last-moment-savers" class="col s12">
+                <div class="card flex-card">
+                    <span class="project-title">Last Moment Savers</span>                    
+                    <p class="list-of-technologies">HTML5/JavaScript/CSS/MySql/MVC/Sequelize/Heroku/Express.js/Node</p>               
+                    <a class="repo-link" href="https://github.com/avidrunner87/last-moment-savers.git">Last Moment Savers Repo Link</a>         
+                    <div class="last-moment-savers-img">
+                        <a href="https://last-moment-savers.herokuapp.com">
+                            <img class="project-imgs" src="./assets/images/last-moment-savers.png"
+                                alt="last moment savers" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="small-talk" class="col s12">
+                <div id="project1" class="card flex-card">
+                    <span class="project-title">Small Talk</span>                    
+                    <p class="list-of-technologies">jQuery/Bootstrap/APIs</p>               
+                    <a class="repo-link" href="https://github.com/avidrunner87/small-talk.git">Small Talk Repo Link</a>             
+                    <div class="small-talk-img">
+                        <a href="https://avidrunner87.github.io/small-talk">
+                            <img class="project-imgs" src="./assets/images/small-talk.png" alt="small talk" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="employee-tracker" class="col s12">
+                <div class="card flex-card">
+                    <span class="project-title">Employee Tracker</span>                    
+                    <p class="list-of-technologies">HTML5/JavaScript/CSS/Node/Inquirer/Express/MySql</p>               
+                    <a class="repo-link" href="https://github.com/acromarti01/employee-tracker-repo.git">Employee Tracker Repo Link</a>         
+                    <div class="employee-tracker-img">
+                        <a href="https://drive.google.com/file/d/1sS0fzzeiJPgGbSPonGLsN4F_63C-2OGS/view">
+                            <img class="project-imgs" src="./assets/images/employee-tracker.png"
+                                alt="employee tracker" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="team-profile" class="col s12">
+                <div class="card flex-card">
+                    <span class="project-title">Team Profile Generator</span>                    
+                    <p class="list-of-technologies">HTML5/JavaScript/CSS/Node/Inquirer</p>               
+                    <a class="repo-link" href="https://github.com/acromarti01/team-profile-generator.git">Team Profile Repo Link</a>         
+                    <div class="team-profile-img">
+                        <a href="https://drive.google.com/file/d/1DjjMiBH7ANFSefByHbgRr2QNnzFbA11A/view">
+                            <img class="project-imgs" src="./assets/images/team-profile.png"
+                                alt="team profile" />
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-        <section id="about-me">
-            <div class="container1">
-                <h2>
-                    <span>about</span>
-                    <span>me</span>
-                </h2>
-            </div>
-            <div class="container2">
-                <p class="bio">
-                    I am a student at Rice University Coding Boot Camp currently living in Houston, Texas. I graduated from Michigan
-                    State University with a bachelor’s degree in computer science engineering. Some projects I have worked on include
-                    building a database and a gas mileage calculator for the Houston Health Department.
-                </p> 
-                <p class="bio"> 
-                    My fascination for computers
-                    started around late middle school. Before I knew it, I would spend hours just surfing many websites looking at their
-                    creative styling and wondering how developers were able to create something so captivating. Some things I like to do
-                    in my free time is running, watching sports and anime, and playing video games.
-                </p>
-            </div>           
-        </section>
-        <section id="work">
-            <div class="container1">
-                <h2>work</h2>
-            </div>
-            <div class="container2 grid-container">
-                <div class="box box1">
-                    <a href="https://avidrunner87.github.io/small-talk">
-                        <img class="project-imgs" src="./assets/images/small-talk.png" alt="small talk" />
-                        <div class="box-title">
-                            <h3>small talk</h3>
-                            <p class="project-tools">jQuery/Bootstrap/APIs</p>
-                        </div>
-                    </a>
-                    <div>
-                        <a class="white-underline" href="https://github.com/avidrunner87/small-talk.git">Small Talk Repo Link</a>
-                    </div>                    
-                </div>
-                <div class="box box2">
-                    <a href="https://acromarti01.github.io/weather-dashboard-repo/">
-                        <img class="project-imgs" src="./assets/images/weather-dashboard.png" alt="weather dashboard" />
-                        <div class="box-title">
-                            <h3>weather dashboard</h3>
-                            <p class="project-tools">jQuery/Moment.js/APIs</p>                            
-                        </div>
-                    </a>
-                    <div>
-                        <a class="white-underline" href="https://github.com/acromarti01/weather-dashboard-repo.git">Dashboard Repo Link</a>
-                    </div>              
-                </div> 
-                <div class="box box3">
-                    <a href="https://acromarti01.github.io/code-quiz-repo">
-                        <img class="project-imgs" src="./assets/images/code-quiz.png" alt="code quiz" />
-                        <div class="box-title">
-                            <h3>code quiz</h3>
-                            <p class="project-tools">JavaScript/HTML5/CSS</p>
-                        </div>
-                    </a>
-                    <div>
-                        <a class="white-underline" href="https://github.com/acromarti01/code-quiz-repo.git">Quiz Repo Link</a>
-                    </div>                                                
-                </div>
-                <div class="box box4">
-                    <a href="https://acromarti01.github.io/work-day-scheduler-repo/">
-                        <img class="project-imgs" src="./assets/images/work-day.png" alt="planner" />
-                        <div class="box-title">
-                            <h3>day schedular</h3>
-                            <p class="project-tools">jQuery/Bootstrap/Moment.js</p>                            
-                        </div>                        
-                    </a>
-                    <div>
-                        <a class="white-underline" href="https://github.com/acromarti01/work-day-scheduler-repo.git">Scheduler Repo Link</a>
-                    </div>                  
-                </div>
-                <div class="box box5">
-                    <a href="https://acromarti01.github.io/password-generator-repo/">
-                        <img class="project-imgs" src="./assets/images/password-generator.png" alt="password generator" />
-                        <div class="box-title">
-                            <h3>password generator</h3>
-                            <p class="project-tools">JavaScript/HTML5/CSS</p>
-                        </div>
-                    </a>
-                    <div>
-                        <a class="white-underline" href="https://github.com/acromarti01/password-generator-repo.git">Password Repo Link</a>
-                    </div>               
-                </div>         
-            </div>           
-        </section>
-        <section id="contact-me">
-            <div class="container1">
-                <h2>
-                    <span>contact</span>
-                    <span>me</span>                
-                </h2>                
-            </div>
-            <div class="container2 flex-wrap">
-                <ul>
-                    <li class="white-underline">(713) 417-5707</li>
-                    <li class="white-underline">acromarti@gmail.com</li>
-                    <li><a class="other-links" href="https://github.com/acromarti01">github</a></li>
-                    <li><a class="other-links" href="https://www.linkedin.com/in/anthony-c-07985b140">linkedin</a></li>
-                    <li><a class="other-links" href="https://www.facebook.com/">facebook</a></li>
-                </ul>
-            </div>           
-        </section>        
-    </main>
-    
+    </div>
+    <div id="about-modal" class="modal">
+        <div class="modal-content">
+            <h4>Bio</h4>
+            <p class="bio">
+                I am a student at Rice University Coding Boot Camp currently living in Houston, Texas. I graduated from
+                Michigan
+                State University with a bachelor’s degree in computer science engineering. Some projects I have worked
+                on include
+                building a database and a gas mileage calculator for the Houston Health Department.
+            </p>
+            <p class="bio">
+                My fascination for computers
+                started around late middle school. Before I knew it, I would spend hours just surfing many websites
+                looking at their
+                creative styling and wondering how developers were able to create something so captivating. Some things
+                I like to do
+                in my free time is running, watching sports and anime, and playing video games.
+            </p>
+        </div>
+    </div> -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <h4>Contact</h4>
+            <ul>
+                <li class="white-underline">(713) 417-5707</li>
+                <li class="white-underline">acromarti@gmail.com</li>
+                <li><a class="other-links" href="https://github.com/acromarti01">github</a></li>
+                <li><a class="other-links" href="https://www.linkedin.com/in/anthony-c-07985b140">linkedin</a></li>
+                <li><a class="other-links" href="https://www.facebook.com/">facebook</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
